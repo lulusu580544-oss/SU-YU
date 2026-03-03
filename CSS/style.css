@@ -1,0 +1,768 @@
+@charset "UTF-8";
+/*編碼一定要在第一行，國際通用編碼*/
+@import url(./var.css);
+@import url(./reset.css);
+
+@font-face {
+    /*字體抓取*/
+    font-family: "Swiss721BT-Black";
+    src: url(../webfonts/Swiss721BT-Black.otf);
+}
+
+@font-face {
+    /*字體抓取*/
+    font-family: "Animal Chariot";
+    src: url(../webfonts/Animal\ Chariot.ttf);
+}
+
+@font-face {
+    /*字體抓取*/
+    font-family: "NotoSansHK";
+    src: url(../webfonts/NotoSansHK-VariableFont_wght.ttf);
+}
+
+@font-face {
+    /*字體抓取*/
+    font-family: "Centaur-Regular";
+    src: url(../webfonts/Centaur-Regular.otf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --width: 400px;
+    --height: 400px;
+}
+
+
+#navbar {
+    position: fixed;
+    margin: 70px 170px;
+    z-index: 3;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ---------------主頁------------- */
+#first {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.logo {
+    display: flex;
+    position: relative;
+    top: 15px;
+    width: 7%;
+}
+
+#navbar .navgation {
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex: 1;
+
+    .menu {
+        display: flex;
+        padding: 20px;
+        gap: 45px;
+
+        a {
+            transition: .1s all ease-in-out;
+            z-index: 3;
+            color: rgb(0, 0, 0);
+            font-size: var(--font-md);
+            font-family: "Swiss721BT-Black";
+        }
+    }
+
+    .connet {
+        position: relative;
+        left: 10px;
+        width: 5%;
+    }
+}
+
+.menu a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: black;
+}
+
+.menu a:hover::after {
+    width: 100%;
+    transition: 0.3s;
+}
+
+
+/*------- ENJOY LIFE，0000/09/03---------- */
+#first .main-title {
+
+    span {
+        font-family: "Animal Chariot";
+        font-size: var(--font-ex);
+
+        /* 控制字的間距 */
+        letter-spacing: 20px;
+
+        position: relative;
+        left: 200px;
+        top: 210px;
+    }
+
+    p {
+        display: flex;
+        position: fixed;
+        writing-mode: vertical-lr;
+
+        font-family: "Swiss721BT-Black";
+        font-size: var(--font-xs);
+
+        top: 300px;
+        left: 30px;
+
+        /* 控制字的間距 */
+        letter-spacing: 1px;
+    }
+
+    .black-text {
+        color: black;
+    }
+
+    .white-text {
+        color: rgb(255, 255, 255);
+    }
+}
+
+/* --------主頁文字點綴介紹 */
+#first .first-intro-text {
+
+    p {
+        position: relative;
+        left: 170px;
+        top: 180px;
+
+        display: flex;
+        font-family: "NotoSansHK";
+        font-size: var(--font-xs);
+
+        /* 控制字的間距 */
+        letter-spacing: 6px;
+    }
+}
+
+/*-------------- 圖片---------- */
+#first .pic {
+    position: absolute;
+    overflow: hidden;
+    left: 800px;
+    bottom: 120px;
+    z-index: -1;
+
+    img {
+        cursor: pointer;
+        position: relative;
+        width: 65%;
+        /* 設定你想要的寬度 */
+        height: 65%
+            /* 與寬度相同 */
+    }
+
+}
+
+
+/* --------------關於我們----------- */
+#about-us {
+    height: 100vh;
+}
+
+#about-us .about-main-text {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+
+    .about-title {
+        display: flex;
+
+        & h1 {
+            position: relative;
+            padding-top: 90px;
+            left: 200px;
+
+            font-family: "Swiss721BT-Black";
+            font-size: var(--font-xl);
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            left: 30px;
+            top: 50px;
+            gap: 0 20px;
+
+            a {
+                width: 10%;
+            }
+
+            p {
+                font-family: "Centaur-Regular";
+                font-size: var(--font-vm);
+            }
+        }
+    }
+
+    .about-content {
+        display: flex;
+        position: relative;
+        left: 280px;
+        gap: 50px;
+        padding-top: 40px;
+
+        p {
+            font-family: "NotoSansHK";
+            font-size: var(--font-md);
+
+            /* 控制字的間距 */
+            letter-spacing: 3px;
+            line-height: 230%;
+        }
+
+    }
+
+    .bg-text {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        z-index: -1;
+        position: relative;
+        left: 30px;
+        bottom: 500px;
+
+        p {
+            line-height: 190px;
+            letter-spacing: -10px;
+
+            color: rgba(172, 171, 171, 0.098);
+            writing-mode: vertical-lr;
+            font-family: "Swiss721BT-Black";
+            font-size: var(--font-bg);
+        }
+    }
+}
+
+
+/* --------------成員--------------- */
+#member {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+#member .member-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px 150px;
+}
+
+#member .member-text {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    right: 5px;
+    top: 70px;
+
+    h2 {
+        position: relative;
+        bottom: 30px;
+
+        font-size: var(--font-xl);
+        font-family: "Swiss721BT-Black";
+        /* 控制字的間距 */
+        letter-spacing: 3px;
+    }
+
+    h3 {
+        position: relative;
+        top: 10px;
+
+        font-size: var(--font-md);
+        font-family: "NotoSansHK";
+        /* 控制字的間距 */
+        letter-spacing: 4px;
+        line-height: 170%;
+    }
+
+}
+
+#member .art {
+    display: flex;
+}
+
+#member .article {
+    display: flex;
+    flex-direction: column;
+
+    .btn1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 280px;
+
+        right: 80px;
+        top: 50px;
+        gap: 20px;
+
+        p {
+            width: 30%;
+            font-family: "Centaur-Regular";
+            font-size: var(--font-vm);
+        }
+    }
+
+    a {
+        width: 11%;
+    }
+
+}
+
+#member .member-circle1 {
+    position: relative;
+    left: 20px;
+
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid rgba(84, 84, 84, 0.323);
+    border-radius: 50%;
+    /*變圓形*/
+}
+
+#member .member-circle2 {
+    position: relative;
+    left: 20px;
+
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid rgba(83, 83, 83, 0.323);
+    border-radius: 50%;
+    /*變圓形*/
+}
+
+
+/* -------------自動換圖輪播-------------- */
+#slide {
+    width: var(--width);
+    height: var(--height);
+
+    /* 超過隱藏 */
+    overflow: hidden;
+
+    position: relative;
+    left: 30px;
+    top: 80px;
+}
+
+li.item {
+    width: 400px;
+    height: 400px;
+
+    color: #fff;
+    font-size: 4rem;
+
+    text-align: center;
+    line-height: var(--height);
+
+    /* 拼排 */
+    float: left;
+    transition: all .35s ease-in-out;
+
+}
+
+ul.list {
+
+    /* 修改為新增html第一張重覆後+1 */
+    width: calc(var(--width) * 4);
+
+    height: inherit;
+
+    /* 定位 */
+    position: relative;
+    z-index: -1;
+
+    /* 延遲1s */
+    animation: move 7s ease .3s infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(calc(0 * 400px));
+    }
+
+    33% {
+        transform: translate(calc(-1 * 400px));
+    }
+
+    66% {
+        transform: translate(calc(-2 * 400px));
+    }
+
+    100% {
+        transform: translate(calc(-3 * 400px));
+    }
+}
+
+#slide input[type=radio] {
+    display: none;
+}
+
+#slide label {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#slide1~#bullets label:nth-child(1) {
+    /* 延遲1s */
+    animation: circle 7s ease .3s infinite;
+}
+
+#slide1:checked~#bullets label:nth-child(1),
+#slide2:checked~#bullets label:nth-child(2),
+#slide3:checked~#bullets label:nth-child(3),
+#slide4:checked~#bullets label:nth-child(4) {
+    background: #d37f43;
+}
+
+#bullets {
+    text-align: center;
+    position: relative;
+    align-items: center;
+}
+
+#bullets label {
+    display: inline-block;
+    justify-content: center;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #b6b4b4;
+    margin: 0 12px;
+    position: relative;
+    top: 430px;
+    z-index: 3;
+}
+
+@keyframes circle {
+    0% {
+        color: #d37f43;
+    }
+
+    33% {
+        color: #d37f43;
+    }
+
+    66% {
+        color: #d37f43;
+        ;
+    }
+
+    100% {
+        color: #d37f43;
+    }
+}
+
+
+/* ----------------最新消息------------- */
+#menu {
+    height: 300vh;
+    background-color: black;
+    overflow: hidden;
+
+    & h2 {
+        position: relative;
+        left: 150px;
+        top: 120px;
+
+        color: aliceblue;
+        font-size: var(--font-xl);
+        font-family: "Swiss721BT-Black";
+
+        letter-spacing: 9px;
+    }
+
+    h3 {
+        margin: 0 0 10px;
+        font-size: 1.3rem;
+        /* 控制字的間距 */
+        letter-spacing: 3px;
+        font-family: "NotoSansHK";
+    }
+
+    /* 黑色背景 */
+    .menu-bg {
+        overflow: hidden;
+        position: relative;
+        bottom: 700px;
+        z-index: -2;
+
+        & img {
+            height: 170%;
+        }
+    }
+}
+
+
+/* 文字+圖片整體 */
+#menu .menu-content-img1 {
+
+    display: flex;
+    justify-content: center;
+
+    height: 100vh;
+    gap: 70px;
+
+    p {
+        position: relative;
+
+        color: #fff;
+        font-size: 1rem;
+
+        /* 控制字的間距 */
+        letter-spacing: 3px;
+        font-family: "NotoSansHK";
+    }
+}
+
+#menu .menu-content-img2 {
+
+    display: flex;
+    justify-content: center;
+
+    height: 100vh;
+    gap: 70px;
+    bottom: 50px;
+
+    p {
+        color: #fff;
+        font-size: 1rem;
+
+        /* 控制字的間距 */
+        letter-spacing: 3px;
+        font-family: "NotoSansHK";
+    }
+}
+
+
+#menu .menu-work-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 400px;
+    height: 400px;
+    background-color: #e5e5e5;
+    object-fit: cover;
+
+    position: relative;
+    top: 260px;
+
+    figure {
+        width: 80%;
+    }
+}
+
+/* 用繪本繪一繪屏東 */
+#menu .menu-text-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    top: 280px;
+
+}
+
+#menu .menu-btn1 {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    top: 290px;
+    gap: 10px;
+
+    a {
+        width: 7%;
+    }
+
+    p {
+        color: #fff;
+        font-size: 1rem;
+
+        /* 控制字的間距 */
+        letter-spacing: 3px;
+        font-family: "NotoSansHK";
+    }
+}
+
+
+
+/* ----------VEGETARIAN---------- */
+#menu .menu-text {
+    p {
+        position: absolute;
+        color: rgba(211, 211, 211, 0.205);
+        bottom: 40px;
+
+        writing-mode: vertical-lr;
+        font-family: "Swiss721BT-Black";
+        font-size: var(--font-bg);
+
+        z-index: 99;
+        right: -10px;
+    }
+}
+
+/* ----------------活動內容------------- */
+#content {
+    display: flex;
+    align-items: center;
+
+    height: 140vh;
+    overflow: hidden;
+
+    & h4 {
+        position: relative;
+        bottom: 90px;
+        width: 120%;
+
+        font-size: var(--font-xl);
+        font-family: "Swiss721BT-Black";
+
+        /* 控制字的間距 */
+        letter-spacing: 2px;
+    }
+}
+
+#content .image {
+    position: relative;
+
+    width: 30%;
+    height: 40%;
+
+    left: 270px;
+    top: 15px;
+
+    img {
+        position: absolute;
+    }
+}
+
+
+.image img:nth-child(2) {
+    opacity: 0;
+}
+
+.image img:nth-child(3) {
+    opacity: 0;
+}
+
+.image img:nth-child(4) {
+    opacity: 0;
+}
+
+
+/* -----------內文----------- */
+#content .content-article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+
+    position: relative;
+    left: 420px;
+    top: 50px;
+
+    .circle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .hover {
+        display: block;
+        position: relative;
+
+        width: 10px;
+        height: 10px;
+
+        background-color: rgb(0, 0, 0);
+        border-radius: 99%;
+        /*變圓形*/
+    }
+
+    .small-cir {
+        display: block;
+        position: relative;
+
+        width: 5px;
+        height: 5px;
+
+        background-color: rgb(140, 139, 139);
+        border-radius: 99%;
+        /*變圓形*/
+    }
+
+    li {
+        color: black;
+        padding: 20px;
+        font-size: var(--font-md);
+        font-family: "NotoSansHK";
+
+        /* 控制字的間距 */
+        letter-spacing: 5px;
+        line-height: 2.5;
+    }
+}
+
+.text :hover {
+    color: black;
+}
+
+.text ::after {
+    content: "";
+    display: block;
+
+    width: 0;
+    height: 1px;
+    background-color: rgb(101, 98, 98);
+}
+
+.text :hover::after {
+    width: 100%;
+    transition: 0.5s;
+}
+
+footer {
+    position: relative;
+    height: 50vh;
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
