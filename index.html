@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SU YU</title>
+
+    <!-- 自訂的css一定要放在最下面，因為權重要最重 -->
+    <link rel="stylesheet" href="./CSS/menu.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <header id="navbar">
+        <div class="logo">
+            <!-- LOGO圖片連結 -->
+            <a href="#">
+                <img src="./images/logo.png" alt="">
+            </a>
+        </div>
+        <!-- 導覽列 -->
+        <div class="topbar">
+            <!-- 漢堡按鈕 -->
+            <button class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <!-- 主要按鈕區 -->
+            <nav class="navgation">
+                <ul class="menu">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">NEWS</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                </ul>
+                <div class="connet">
+                    <a href="#"><img src="./images/arrow.png"></a>
+                    <a href="#"><img src="./images/arrow-white.png"></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="first">
+            <div class="main-title">
+                <span class="black-text">Design</span>
+                <span class="white-text">life</span>
+                <p class="main-text">0000 / 01 / 26</p>
+            </div>
+            <div class="first-intro-text">
+                <p>走入煙火間，品嘗不一樣的素食料理。</p>
+            </div>
+            <div class="pic">
+                <figure><img src="./images/ME.JPG"></figure>
+                <!-- <figure ><img src="./images/Homepage-Model-3-Desktop-US.avif"></figure> -->
+            </div>
+        </section>
+
+        <section id="about-us">
+            <div class="about-main-text smoove">
+                <div class="about-title">
+                    <h1>About Us.</h1>
+                    <div class="btn">
+                        <a href="#"><img src="./images/arrow.png"></a>
+                        <p>view more</p>
+                    </div>
+
+                </div>
+                <div class="about-content smoove">
+                    <p>具備電商視覺設計與社群經營<br>
+                        經驗，擅長以清晰的版面編排<br>
+                        與品牌視覺統整，提升商品質<br>
+                        感與曝光效益。期望在設計領<br>
+                        域持續精進，為品牌創造更具<br>
+                        溫度與識別度的視覺價值。
+                    </p>
+                    <p> 具備電商視覺設計與社群經營<br>
+                        經驗，擅長以清晰的版面編排<br>
+                        與品牌視覺統整，提升商品質<br>
+                        感與曝光效益。期望在設計領<br>
+                        域持續精進，為品牌創造更具<br>
+                        溫度與識別度
+                    </p>
+                </div>
+                <div class="bg-text">
+                    <p>PORTFOLIO</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="member">
+            <div class="member-img smoove">
+                <!------ 換圖輪播 ---------->
+                <!-- <div id="slider">
+                    <input type="radio" name="slider" id="slide1" checked>
+                    <input type="radio" name="slider" id="slide2">
+                    <input type="radio" name="slider" id="slide3">
+                    <input type="radio" name="slider" id="slide4">
+                    <div id="slides">
+                        <div id="overflow">
+                            <div class="inner">
+                                <div class="slide slide_1">
+                                    <div class="slide-content">
+                                        <img src="./images/bg-2.jpg">
+                                    </div>
+                                </div>
+                                <div class="slide slide_2">
+                                    <div class="slide-content">
+                                        <img src="./images/bg-3.jpg">
+                                    </div>
+                                </div>
+                                <div class="slide slide_3">
+                                    <div class="slide-content">
+                                        <img src="./images/bg-4.jpg">
+                                    </div>
+                                </div>
+                                <div class="slide slide_4">
+                                    <div class="slide-content">
+                                        <img src="./images/bg-6.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="controls">
+                        <label for="slide1"></label>
+                        <label for="slide2"></label>
+                        <label for="slide3"></label>
+                        <label for="slide4"></label>
+                    </div>
+                    <div id="bullets">
+                        <label for="slide1"></label>
+                        <label for="slide2"></label>
+                        <label for="slide3"></label>
+                        <label for="slide4"></label>
+                    </div>
+                </div> -->
+                <div id="slide">
+                    <input type="radio" name="slider" id="slide1" checked>
+                    <input type="radio" name="slider" id="slide2">
+                    <input type="radio" name="slider" id="slide3">
+                    <input type="radio" name="slider" id="slide4">
+                    <div id="bullets">
+                        <label for="slide1"></label>
+                        <label for="slide2"></label>
+                        <label for="slide3"></label>
+                        <label for="slide4"></label>
+                    </div>
+                    <ul class="list">
+                        <li class="item">
+                            <img src="./images/post1.png">
+                        </li>
+                        <li class="item">
+                            <img src="./images/post2.png">
+                        </li>
+                        <li class="item">
+                            <img src="./images/post3.png">
+                        </li>
+                        <!-- 新增重播 -->
+                        <li class="item">
+                            <img src="./images/post1.png">
+                        </li>
+                    </ul>
+                </div>
+                <div class="member-text">
+                    <div>
+                        <h2>YIFU</h2>
+                    </div>
+                    <div class="art">
+                        <div class="article">
+                            <div class="article-text">
+                                <h3>走入煙火間，品嘗不一樣的<br>
+                                    素食料理火間，品嘗不一樣<br>
+                                    的火間，品嘗不一樣的火間<br>
+                                    ，品嘗不一樣的火間，品嘗<br>
+                                    不一樣的火間，品嘗不一樣<br>
+                                    的的火間，品嘗不一樣的火<br>
+                                </h3>
+                            </div>
+                            <div class="btn1">
+                                <a href="#"><img src="./images/arrow.png"></a>
+                                <p>view more</p>
+                                <!-- <span class="member-circle1"></span> -->
+                            </div>
+                        </div>
+                        <div class="article">
+                            <div class="article-text">
+                                <h3>走入煙火間，品嘗不一樣的<br>
+                                    素食料理火間，品嘗不一樣<br>
+                                    的火間，品嘗不一樣的火間<br>
+                                    ，品嘗不一樣的火間，品嘗<br>
+                                    不一樣的火間，品嘗不一樣<br>
+                                    的的火間，品嘗不一樣的火<br>
+                                </h3>
+                            </div>
+                            <div class="btn1">
+                                <a href="#"><img src="./images/arrow.png"></a>
+                                <p>view more</p>
+                                <!-- <span class="member-circle2"></span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2>WORK.</h2>
+            <div class="menu-content-img1 smoove">
+                <div>
+                    <div class="menu-work-1">
+                        <figure><img src="./images/work1.png"></figure>
+                    </div>
+                    <div class="menu-text-1">
+                        <p>用繪本繪一繪屏東</p>
+                    </div>
+                    <div class="menu-btn1">
+                        <a href="#"><img src="./images/arrow-white.png"></a>
+                        <p>view more</p>
+                        <!-- <span class="member-circle1"></span> -->
+                    </div>
+                </div>
+                <div>
+                    <div class="menu-work-1">
+                        <figure><img src="./images/work1.png"></figure>
+                    </div>
+                    <div class="menu-text-1">
+                        <p>用繪本繪一繪屏東</p>
+                    </div>
+                    <div class="menu-btn1">
+                        <a href="#"><img src="./images/arrow-white.png"></a>
+                        <p>view more</p>
+                        <!-- <span class="member-circle1"></span> -->
+                    </div>
+                </div>
+                <!-- <div class="owl-carousel custom-carousel owl-theme">
+                    <div class="item active" style="background-image: url(./images/bg-2.jpg);">
+                        <div class="item-desc">
+                            <h3>炸豆包 $120</h3>
+                            <p>Dota 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of
+                                the
+                                Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(./images/bg-3.jpg);">
+                        <div class="item-desc">
+                            <h3>無酒精飲料 $170</h3>
+                            <p>The Witcher 3 is a multiplayer online battle arena by Valve. The game is a sequel to
+                                Defense
+                                of the Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft
+                                III.</p>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(./images/bg-4.jpg);">
+                        <div class="item-desc">
+                            <h3>茄汁蓋飯 $220</h3>
+                            <p>RDR 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of
+                                the
+                                Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(./images/bg-6.jpg);">
+                        <div class="item-desc">
+                            <h3>炸豆包</h3>
+                            <p>PUBG 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of
+                                the
+                                Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(./images/bg-8.jpg);">
+                        <div class="item-desc">
+                            <h3>炸豆包</h3>
+                            <p>Battle royale where 100 players fight to be the last person standing. which was a
+                                community-created mod
+                                for Blizzard Entertainment's Warcraft III.</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="menu-content-img2 smoove">
+                <div>
+                    <div class="menu-work-1">
+                        <figure><img src="./images/work1.png"></figure>
+                    </div>
+                    <div class="menu-text-2">
+                        <p>用繪本繪一繪屏東</p>
+                    </div>
+                    <div class="menu-btn1">
+                        <a href="#"><img src="./images/arrow-white.png"></a>
+                        <p>view more</p>
+                        <!-- <span class="member-circle1"></span> -->
+                    </div>
+                </div>
+                <div>
+                    <div class="menu-work-1">
+                        <figure><img src="./images/work1.png"></figure>
+                    </div>
+                    <div class="menu-text-2">
+                        <p>用繪本繪一繪屏東</p>
+                    </div>
+                    <div class="menu-btn1">
+                        <a href="#"><img src="./images/arrow-white.png"></a>
+                        <p>view more</p>
+                        <!-- <span class="member-circle1"></span> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-bg">
+                <!-- <img src="./images/bg-3.png"> -->
+                <div class="menu-text">
+                    <p>VEGETARIAN</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="content">
+            <div class="image smoove">
+                <img src="./images/instagram8.png">
+                <img src="./images/instagram9.png">
+                <img src="./images/instagram10.png">
+                <img src="./images/instagram1.png">
+            </div>
+            <div class="content-article smoove">
+                <div class="circle">
+                    <span class="small-cir"></span>
+                    <span class="small-cir"></span>
+                    <div class="hover"></div>
+                    <span class="small-cir"></span>
+                    <span class="small-cir"></span>
+                    <div class="hover"></div>
+                    <span class="small-cir"></span>
+                    <span class="small-cir"></span>
+                    <div class="hover"></div>
+                    <span class="small-cir"></span>
+                    <span class="small-cir"></span>
+                    <div class="hover"></div>
+                    <span class="small-cir"></span>
+                    <span class="small-cir"></span>
+                </div>
+                <ul>
+                    <li class="text"><a href="#">【不醉不歸】|走入煙火間品嘗素食料理</a></li>
+                    <li class="text"><a href="#">【不醉不歸】|走入煙火間品嘗素食料理</a></li>
+                    <li class="text"><a href="#">【不醉不歸】|走入煙火間品嘗素食料理</a></li>
+                    <li class="text"><a href="#">【不醉不歸】|走入煙火間品嘗素食料理</a></li>
+                </ul>
+            </div>
+            <div class="btn1">
+                <a href="#"></a>
+                <p>點擊了解更多</p>
+                <!-- <span class="member-circle2"></span> -->
+            </div>
+            <div class="bg-text">
+                <p>PORTFOLIO</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- jquery smoove cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smoove/0.2.10/jquery.smoove.min.js"></script>
+    <!-- 自訂的js -->
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>
