@@ -297,8 +297,8 @@
 
     p {
         position: relative;
-        left: 170px;
-        top: 180px;
+        left: 210px;
+        top: 200px;
 
         display: flex;
         font-family: "NotoSansHK";
@@ -453,13 +453,14 @@
         font-family: "NotoSansHK";
         /* 控制字的間距 */
         letter-spacing: 4px;
-        line-height: 170%;
+        line-height: 190%;
     }
 
 }
 
 #member .art {
     display: flex;
+    gap: 40px;
 }
 
 #member .article {
@@ -639,7 +640,7 @@ ul.list {
 
 /* ----------------最新消息------------- */
 #menu {
-    height: 300vh;
+    height: 240vh;
     background-color: black;
     overflow: hidden;
 
