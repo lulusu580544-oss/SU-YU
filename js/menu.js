@@ -37,18 +37,18 @@ $(function () {
 });
 
 
-/* $(window).scroll(function () {
+$(window).scroll(function () {
     //stop為了防止程式多次重複循環
     if ($(this).scrollTop() > 2000) {
-        $('& a').css("color", "white");
+        $('.menu a').css("color", "white");
     }
-    if ($(this).scrollTop() > 4000) {
-        $('& a').css("color", "black");
+    if ($(this).scrollTop() > 3500) {
+        $('.menu a').css("color", "black");
     }
     else if ($(this).scrollTop() < 2000) {
-        $('& a').css("color", "black");
+        $('.menu a').css("color", "black");
     }
-})
+}) 
 
 $(window).scroll(function () {
     if ($(this).scrollTop() > 2000) {
@@ -67,7 +67,7 @@ $(window).scroll(function () {
         $('.connet img:eq(0)').css('opacity', '0');
         $('.connet img:eq(1)').css('opacity', '1');
     }
-    if ($(this).scrollTop() > 4000) {
+    if ($(this).scrollTop() > 3500) {
         $('.connet img:eq(0)').css('opacity', '1');
         $('.connet img:eq(1)').css('opacity', '0');
     }
@@ -75,7 +75,7 @@ $(window).scroll(function () {
         $('.connet img:eq(0)').css('opacity', '1');
         $('.connet img:eq(1)').css('opacity', '0');
     }
-}) */
+}) 
 
 
 //jquery smoove
